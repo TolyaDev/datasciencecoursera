@@ -1,6 +1,5 @@
 rm(list=ls(all=TRUE)); gc()
 setwd('/home/anatoly/do/learn_data_science/datasciencecoursera/')
-library(dplyr)
 library(data.table)
 
 # task 1
@@ -38,28 +37,7 @@ data.meanstd <- data[,needed_features]
 
 # task 5
 
-task_five <- function(x){
-  means <- sapply(x[1:68], mean)
-  means$activityname <- x[69]$activityname[1]
-  means
-}
-
-splitted <- split(data.meanstd, data.meanstd$subject)
-tmp <- lapply(splitted, FUN = function(x) lapply(split(x, x$activity), FUN = task_five))
-for (i in 1:length(tmp)){
-  names(tmp[[i]]) <- activities$V2
-}
-one <- simplify2array(tmp$`1`)
-two <- simplify2array(tmp$`2`)
-rbind(one,two)
-
-# !
 table <- data.table(data.meanstd)
 table[, 1:66 := lapply(.SD, mean), .SDcols = 1:66, by=list(subject, activity)]
 data.tidy  <- table[!duplicated(table)]
-# !
-
-to_calc <- names(table)[1:66]
-col <- "fBodyBodyGyroJerkMag-std()"
-table[,table[[col]] := mean(table[[col]]), by=list(subject, activity)]
-a  <- table[!duplicated(table)]
+write.table(x = data.tidy, file = 'tidy.txt', row.names = FALSE)
