@@ -6,6 +6,6 @@ Firstly, script removes all variables in your environment, so be careful if you 
 Then, activities and their actual names are loaded. The next step is about subsetting mean and std variable from the whole dataset. Final part calculates means by all activities by subjects and saves the result tidy data to the text file.
 
 ### How to get it work
-1) You should have a `dplyr` package installed;
-2) `setwd('...')` have to be changed to appropriate directory with dataset;
-3) Dataset in a working directory is a folder "UCI HAR Dataset" from the downloded archive;
+1. You should have a `dplyr` package installed;
+2. `setwd('...')` have to be changed to appropriate directory with dataset;
+3. Dataset in a working directory is a folder "UCI HAR Dataset" from the downloded archive;
