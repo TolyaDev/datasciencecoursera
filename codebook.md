@@ -29,4 +29,4 @@ There is 69 variables given in a `tidy.txt` dataset. Here is a description of va
 
 For each of these features are given mean (`mean`) and standart deviation (`std`). Note that features above containing "XYZ" in it's name are actualy 3 variable (each for X, Y and Z).
 
-Variable `activity` contains activity number. Variable `subject` contains subject identificator. Variable `activityname` contains an understandable name for activity described in `activity` variable.
+Variable **activity** contains activity number. <br/>Variable **subject** contains subject identificator. <br/>Variable **activityname** contains an understandable name for activity described in **activity** variable.
