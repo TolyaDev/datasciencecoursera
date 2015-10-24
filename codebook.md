@@ -9,23 +9,23 @@ There is 69 variables given in a `tidy.txt` dataset. Here is a description of va
 >
 > These signals were used to estimate variables of the feature vector for each pattern:  
 > '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-> tBodyAcc-XYZ
-> tGravityAcc-XYZ
-> tBodyAccJerk-XYZ
-> tBodyGyro-XYZ
-> tBodyGyroJerk-XYZ
-> tBodyAccMag
-> tGravityAccMag
-> tBodyAccJerkMag
-> tBodyGyroMag
-> tBodyGyroJerkMag
-> fBodyAcc-XYZ
-> fBodyAccJerk-XYZ
-> fBodyGyro-XYZ
-> fBodyAccMag
-> fBodyAccJerkMag
-> fBodyGyroMag
-> fBodyGyroJerkMag 
+> tBodyAcc-XYZ<br/>
+> tGravityAcc-XYZ<br/>
+> tBodyAccJerk-XYZ<br/>
+> tBodyGyro-XYZ<br/>
+> tBodyGyroJerk-XYZ<br/>
+> tBodyAccMag<br/>
+> tGravityAccMag<br/>
+> tBodyAccJerkMag<br/>
+> tBodyGyroMag<br/>
+> tBodyGyroJerkMag<br/>
+> fBodyAcc-XYZ<br/>
+> fBodyAccJerk-XYZ<br/>
+> fBodyGyro-XYZ<br/>
+> fBodyAccMag<br/>
+> fBodyAccJerkMag<br/>
+> fBodyGyroMag<br/>
+> fBodyGyroJerkMag
 
 For each of these features are given mean (`mean`) and standart deviation (`std`). Note that features above containing "XYZ" in it's name are actualy 3 variable (each for X, Y and Z).
 
