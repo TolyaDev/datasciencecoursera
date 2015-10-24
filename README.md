@@ -2,7 +2,7 @@
 The script `run_analysis.R` analyses the data (as long as it is in it's working directory) and creates a what is called *tidy* dataset.
 
 ### Detailed description
-Firstly, script removes all variables in your environment, so be careful if you have any data in your environment you don't want to lose. Then working directory is set and needed packages are loaded. Next part (till *task 3* comment) is about merging train and test datasets, setting correct names to variables and loading subjects. 
+Firstly, script removes all variables in your environment, so be careful if you have any data in your environment you don't want to lose. Then working directory is set and needed packages are loaded. Next part (till *task 3* comment) is about merging train and test datasets, setting correct names to variables and loading subjects.<br/>
 Then, activities and their actual names are loaded. The next step is about subsetting mean and std variable from the whole dataset. Final part calculates means by all activities by subjects and saves the result tidy data to the text file.
 
 ### How to get it work
